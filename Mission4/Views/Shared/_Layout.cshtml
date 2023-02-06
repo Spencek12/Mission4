@@ -1,0 +1,31 @@
+﻿<!--This layout page gives the general layout for all pages-->
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!--Site title, css, and bootstrap-->
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico.png" />
+    <link href="~/css/default.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="gradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>This is the footer</footer>
+
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+
+</body>
+
+</html>

@@ -44,4 +44,5 @@ $("#btnSend").click(function () {
     //Output to website
     $("#percent-grade").html(total)
     $("#letter-grade").html(letterGrade)
+
 });
